@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>top page</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<table>
+    <tr th:each="task : ${tasks}">
+        <td th:text="${task.id}"></td>
+        <td th:text="${task.taskName}"></td>
+        <td th:text="${task.status}"></td>
+        <td th:text="${task.createDate}"></td>
+        <td th:text="${task.user}"></td>
+    </tr>
+</table>
+</body>

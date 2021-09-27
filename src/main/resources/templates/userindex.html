@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>top page</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<table>
+    <tr th:each="user : ${users}">
+        <td th:text="${user.id}"></td>
+        <td th:text="${user.loginId}"></td>
+        <td th:text="${user.loginPasswd}"></td>
+        <td th:text="${user.name}"></td>
+        <td th:text="${user.acquireTasks()}"></td>
+    </tr>
+</table>
+</body>
